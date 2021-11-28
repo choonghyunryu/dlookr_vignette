@@ -1,0 +1,25 @@
+name: "about dlookr"
+title: "dlookr vignettes"
+description: |
+  dlookr package vignette site
+output_dir: "docs"
+navbar:
+  logo:
+    image: fig/dlookr.png
+    href: https://choonghyunryu.github.io/dlookr/
+  right:
+    - text: "Introduce dlookr"
+      href: index.html
+    - text: "Data quality diagnosis"
+      href: diagonosis.html
+    - text: "Exploratory Data Analysis"
+      href: EDA.html
+    - text: "Data Transformation"
+      href: transformation.html  
+    - icon: fab fa-github
+      href: https://github.com/choonghyunryu/dlookr          
+output: 
+  distill::distill_article:
+    theme: theme.css
+    includes:
+      after_body: footer.html       
